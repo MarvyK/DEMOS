@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+  }
+
+:root {
+    --primary-color: #CBC3C3;
+    --secondary-color: #F5C507;
+    --tertiary-color: #ffffff;
+    --bg-color: #1b1b1b;
+    --secondbg-color: #232428;
+    --font-family: 'MyCustomFont', Roboto, Arial, sans-serif;
+    --font-size: 20px;
+    /* Extra Colors */
+    --blackcol: #000000;
+    --hamburgercol: #b2b2b2;
+    --redred: red;
+    --pink: #FF00FE;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    color: var(--primary-color);
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+    
+}
+.pink {
+    color: var(--pink);
+}

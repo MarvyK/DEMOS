@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The HTML Tags They NEVER Taught You - Abbr</title>
+    <link rel="stylesheet" href="unique.css" />
+    <!-- SOME CUSTOM STYLE FOR THIS ELEMENT -->
+    <style type="text/css">
+      abbr {
+        padding: 5x 10px;
+      }
+
+      abbr:hover:before {
+        content: attr(title);
+        position: absolute;
+        background: #000;
+        border: 1px solid #fff;
+        color: #fff;
+        padding: 5px 10px;
+        margin: -35px 0 0 0;
+        font-size: 0.7rem;
+      }
+      code {
+        font-family: monospace, sans-serif;
+        font-size: 14px;
+        color: #333;
+        background-color: #f2f2f2;
+        padding: 2px 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><span class="pink">&lt;</span>abbr<span class="pink">&gt;</span></h1>
+    <p>
+      The ABBR <abbr title="the title attribute specifies the expanded form of the abbreviation"><code> [&lt;abbr&gt;]</code></abbr> element is used to define an abbreviation or acronym. It is often
+      used to provide a tooltip or expanded form of the abbreviation when the user hovers over it.
+    </p>
+    <p><strong style="color: var(--redred)">NOTE:</strong> This does not work in mobile devices as hover events are not supported.</p>
+  </body>
+</html>
