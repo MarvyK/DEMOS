@@ -1,0 +1,39 @@
+/* GROUPING */
+h1 {
+    color: red;
+    font-size: 2em;
+  }
+  
+  h2 {
+    color: red;
+    font-size: 1.5em;
+  }
+
+  /* Classes */
+  .heading {
+    color: red;
+  }
+  
+  h1.heading {
+    font-size: 2em;
+  }
+  
+  h2.heading {
+    font-size: 1.5em;
+  }
+
+  /* Inheritance */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  .container p {  /* Inherits font-family from body */
+    color: #333; 
+  }
+
+  

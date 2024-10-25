@@ -1,0 +1,43 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+}
+
+
+label, #marvin-menu-checkbox {
+    display: none;
+}
+
+nav a {color: brown;}
+
+
+@media (max-width: 600px){
+    /* Start of Media Query */
+    body {background-color: bisque;}
+
+    nav, #marvin-menu-checkbox {
+        display: none;
+    }
+    
+    label, #marvin-menu-checkbox:checked ~ nav {
+        display: block;
+    }
+    #marvin-menu-checkbox:checked ~ nav {
+        background: grey;
+      }
+
+    nav a {display: block; color:cadetblue;}
+
+    /* End of Media Query */
+}
+
+@font-face {
+    font-family: 'doodah';
+    src: url(../fonts/Kbzipadeedoodah-YG3j.ttf);
+}
+
+h1 {color: blue;}
+#title {
+    font-family: doodah;
+    
+}

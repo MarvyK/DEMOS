@@ -1,0 +1,30 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+}
+
+
+
+label, #marvin-menu-checkbox {
+    display: none;
+}
+
+nav a {color: brown;}
+
+
+@media (max-width: 300px){
+    /* Start of Media Query */
+    body {background-color: bisque;}
+
+    nav, #marvin-menu-checkbox {
+        display: none;
+    }
+    
+    label, #marvin-menu-checkbox:checked ~ nav {
+        display: block;
+    }
+
+    nav a {display: block; color:cadetblue;}
+
+    /* End of Media Query */
+}

@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+  }
+body {
+    text-align: center;
+    font-family: "Poppins";
+}
+.wrapper-main {
+    background: url("https://rvhusa.github.io/rainydays-courseassignemt/images/header1.png") no-repeat;
+    width: auto;
+    height: auto;
+    min-height: 800px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.masthead {
+    background-image: url("https://rvhusa.github.io/rainydays-courseassignemt/images/header1.png");
+    background-size: cover;
+    min-height: 70vh;
+    max-height: 100vh;
+    position: relative;
+    text-shadow: 2px 2px 2px rgb(0,0,0,.1);
+    text-transform: uppercase;
+    background-position: top right;    
+}
+
+.page-navigation {
+    border: solid rgba(10, 54, 65, 1);
+    background-color: rgba(10, 54, 65, 1);
+    height: 3rem;
+    font-family: "Kameron";
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.nav-left-spacer {
+    flex: 1; 
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2; 
+}
+
+.cart-placement {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+   

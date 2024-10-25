@@ -1,0 +1,24 @@
+
+:root {
+    --orange: #FF8C05;
+    --blue: #1400FF;
+    --shadow: 0 4px 4px;
+}
+
+h1 {
+color: red;
+}
+
+.explore {
+    
+    position: relative;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #E0E0E0;
+    border: 2px solid var(--blue);
+    box-shadow: var(--shadow) var(--orange);
+    width: 80%;
+    
+
+}

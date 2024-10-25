@@ -1,0 +1,16 @@
+/*Common media query breakpoints are:
+- 320px 
+- 480px 
+- 768px
+*/
+
+body {
+    background-color: aqua;
+}
+
+
+@media (max-width: 320px ){
+    body{
+        background-color: red;
+    }
+}

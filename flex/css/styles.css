@@ -1,0 +1,49 @@
+main {
+    background-color: lightcoral;
+    margin: 0 auto;
+}
+.tags {
+    display: flex;
+    gap: 1rem 3rem;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.flex {
+    display: flex;
+    gap: 1rem 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex div {
+    max-width: 300px;
+    border: 1px solid black;
+    flex-grow: 1;
+    padding: 1rem;    
+}
+
+.flex div img {
+    display: block;
+    max-width: 100%;    
+    filter: grayscale(75%);
+}
+.flex div img:hover {    
+    filter: none;
+    transition-delay: 0.25s;
+}
+
+/* ****************** */
+.flex2 {
+    display: flex;    
+    
+    
+}
+.flex2 div {
+    flex: 1;
+    text-align: center;    
+    
+}
+.flex2 div img {   
+    
+    
+}
