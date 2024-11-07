@@ -10,8 +10,10 @@ label, #marvin-menu-checkbox {
 
 nav a {color: brown;}
 
-
-@media (max-width: 600px){
+.logo {
+    max-width: 100px;
+}
+@media (max-width: 400px){
     /* Start of Media Query */
     body {background-color: bisque;}
 
