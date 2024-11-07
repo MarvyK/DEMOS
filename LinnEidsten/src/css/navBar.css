@@ -145,7 +145,7 @@ a {
   color: #ede59c;
   font-size: large;
 }
-
+.menuBtn img .burgerz {height: 30px; width: 35px; margin-left: 8px;}
 @media (max-width: 580px) {
   .genreMenuContainer {
     position: absolute;
