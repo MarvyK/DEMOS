@@ -1,0 +1,145 @@
+body,
+html {
+  background-color: white;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+/*stop the whole page to be draggable*/
+body,
+.container,
+.main {
+  touch-action: none;
+}
+
+.container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "nav"
+    "main"
+    "footer";
+
+  background-image: url("https://i.ibb.co/jDSL7WX/Quare-Eyes-Popcorn-BKG-nologo-1.png");
+  background-size: cover;
+}
+.main {
+  overflow: hidden;
+  max-height: 80vh;
+  min-width: 100vw;
+}
+.logoBox {
+  display: flex;
+  justify-content: right;
+  margin-top: 10%;
+}
+
+.logoBox > img {
+  height: 80%;
+  width: 80%;
+  padding-right: 8%;
+}
+
+.discoverFilmsBox img {
+  height: 70%;
+  width: 70%;
+}
+
+.purchasedFilms {
+  color: var(--color-secondary);
+  -webkit-text-stroke: 0.1px #ede59c;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #ede59c;
+  color: var(--color-secondary);
+}
+
+.slider {
+  /* line them up horizontally */
+  display: flex;
+  aspect-ratio: 16 / 9;
+  /* allow for scrolling */
+  overflow-y: hidden;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  touch-action: pan-x;
+}
+
+.slider > a > img {
+  /* fex shrink make sure the width is honored */
+  flex-shrink: 0;
+  margin: 10px;
+  border-radius: 25%;
+  border: 1px solid #b78841;
+  /*prevent images from getting **really** big on PC screens*/
+  max-height: 180px;
+  max-width: 145px;
+  z-index: 1;
+}
+
+.burger {height: 30px; width: 35px; margin-left: 8px;}
+
+/*try to make it ok on all screen sizes*/
+@media (min-width: 394px) {
+  .main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+  }
+  .logoBox {
+    grid-column: 3/11;
+    grid-row: 1/6;
+  }
+  .discoverFilmsBox {
+    grid-column: 1 / 8;
+    grid-row: 4/ 8;
+  }
+  .purchasedFilms {
+    grid-column: 3/13;
+    grid-row: 7 / 12;
+  }
+}
+@media (min-width: 600px) {
+  .logoBox {
+    grid-column: 4 / 11;
+    grid-row: 1 / 7;
+  }
+
+  .discoverFilmsBox {
+    grid-column: 1 / 6;
+    grid-row: 4/ 9;
+  }
+  .purchasedFilms {
+    grid-column: 5/13;
+    grid-row: 7 / 11;
+  }
+}
+
+@media (min-width: 900px) {
+  .logoBox {
+    grid-column: 4 / 10;
+    grid-row: 1 / 7;
+  }
+
+  .discoverFilmsBox {
+    grid-column: 2 / 6;
+    grid-row: 5/ 10;
+  }
+  .purchasedFilms {
+    grid-column: 5/13;
+    grid-row: 9 / 13;
+    max-height: 230px;
+  }
+}
+@media (min-width: 1300px) {
+  .logoBox {
+    grid-column: 5 / 9;
+  }
+  .discoverFilmsBox {
+    grid-column: 3 / 6;
+  }
+}

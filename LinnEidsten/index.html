@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Home page" />
+    <meta name="language" content="English" />
+    <meta name="keywords" content="squareeyes, film, films, independent, indie, directors, movie, movies" />
+    <meta name="description" content="Welcome to Square Eyes! The platform where filmmakers share their stories. Discover unique films, directors, and explore a world of independent cinema!" />
+    <title>Home</title>
+    <link rel="stylesheet" href="src/css/" />
+    <link rel="stylesheet" href="src/css/homePage.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html"><img alt="Homebutton, adored with the glasses SquareEyes logo" src="./assets/images/HomeBtnGlasses.png" /></a>
+
+        <div class="menuContainer">
+          <input type="checkbox" id="toggle" />
+          <label class="menuBtn" for="toggle">
+            <!-- Had to use inline style, class didn't apply when on GH pages, only worked locally for some reason -->
+            <img class="burger" alt="Hamburger menu icon" src="https://i.ibb.co/LkydpRB/hamburger-Icon-Test.png" />
+            ⠀
+          </label>
+
+          <ul class="menuItems">
+            <li>
+              <img alt="A dot for decoration on menu option: Films" src="assets/images/RingThing.png" />
+              <a href="filmList.html">Films</a>
+            </li>
+            <li>
+              <img alt="A dot for decoration on menu option: My cart" src="assets/images/Cart-vector.png" />
+              <a href="cartPage.html">My Cart</a>
+            </li>
+            <li>
+              <img alt="A dot for decoration on menu option: Contact" src="assets/images/RingThing.png" />
+              <a href="contactUs.html">Contact</a>
+            </li>
+            <li>
+              <img alt="A dot for decoration on menu option: About" src="assets/images/RingThing.png" />
+              <a href="aboutUs.html">About</a>
+            </li>
+            <li>
+              <img alt="A dot for decoration on menu option: Home" src="assets/images/RingThing.png" />
+              <a href="index.html">Home</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="main">
+        <div class="logoBox">
+          <img alt="Square Eyes Logo, connecting film lovers" src="assets/images/SquareEyes_Logo.png" />
+        </div>
+        <div class="discoverFilmsBox">
+          <a href="filmList.html"><img alt="Image of film covers, this links to the list of films page" src="./assets/images/DiscoverFilmsButton.png" /></a>
+        </div>
+
+        <div class="purchasedFilms">
+          <img alt="small squareeyes logo, glasses with pupils" src="./assets/images/SquareEyes_Logo_small.png" />
+          Watch a purchased Film
+          <div class="slider">
+            <a href="filmPage.html">
+              <img src="./assets/images/filmCovers/Square_Eyes_Cover1.jpeg" alt="Hobbs & Shaw film cover" />
+            </a>
+            <a href="filmPage.html">
+              <img src="./assets/images/filmCovers/Square_Eyes_Cover2.jpeg" alt="Godzilla film cover" />
+            </a>
+            <a href="filmPage.html">
+              <img src="./assets/images/filmCovers/Square_Eyes_Cover3.jpeg" alt="Once upon a time in Hollywood film cover" />
+            </a>
+            <a href="filmPage.html">
+              <img src="./assets/images/filmCovers/Square_Eyes_Cover4.jpeg" alt="Scream film cover" />
+            </a>
+            <a href="filmPage.html">
+              <img src="./assets/images/filmCovers/Square_Eyes_Cover5.jpeg" alt="Sweetheart film cover" />
+            </a>
+            <a href="filmPage.html">
+              <img src="./assets/images/filmCovers/Square_Eyes_Cover6.jpeg" alt="Addams Family film cover" />
+            </a>
+            <a href="filmPage.html">
+              <img src="./assets/images/filmCovers/Square_Eyes_Cover7.jpeg" alt="Batman film cover" />
+            </a>
+            <a href="filmPage.html">
+              <img src="./assets/images/filmCovers/Square_Eyes_Cover8.jpeg" alt="Toy Story 4 film cover" />
+            </a>
+            <a href="filmPage.html">
+              <img src="./assets/images/filmCovers/Square_Eyes_Cover8.jpeg" alt="Toy Story 4 film cover" />
+            </a>
+            <a href="filmPage.html">
+              <img src="./assets/images/filmCovers/Square_Eyes_Cover8.jpeg" alt="Toy Story 4 film cover" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <!-- Buttons within <a> are not nice for people navigating with keyboard -->
+        <p class="followTxt"><span class="heavy">FOLLOW</span><span> US</span></p>
+        <img class="soMeBtns" alt="Social media buttons" src="./assets/images/SoMeButtons.png" />
+        <div class="footerBtns">
+          <a class="footerBtn" href="aboutUs.html">About Us</a>
+          <a class="footerBtn" href="contactUs.html">Contact Us</a>
+          <span>org nr xxxx xxxx xx (C)2024</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
