@@ -1,45 +1,86 @@
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: aliceblue;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: aliceblue;
 }
 
-
-label, #marvin-menu-checkbox {
-    display: none;
+label,
+#marvin-menu-checkbox {
+  display: none;
 }
 
-nav a {color: brown;}
+nav a {
+  color: brown;
+}
 
 .logo {
-    max-width: 100px;
+  max-width: 100px;
 }
-@media (max-width: 400px){
-    /* Start of Media Query */
-    body {background-color: bisque;}
+@media (max-width: 1000px) {
+  /* Start of Media Query */
+  body {
+    background-color: bisque;
+  }
+  .marv-menu label::before {
+    /* content: "\9776"; Default hamburger icon */
+    font-family: "Material Icons";
+    content: "menu";
+    font-size: 1.5em;
+  }
 
-    nav, #marvin-menu-checkbox {
-        display: none;
-    }
-    
-    label, #marvin-menu-checkbox:checked ~ nav {
-        display: block;
-    }
-    #marvin-menu-checkbox:checked ~ nav {
-        background: grey;
-      }
+  #marvin-menu-checkbox:checked + label::before {
+    /* content: "\2715"; Change to multiplication sign (X)  */
+    font-family: "Material Icons";
+    content: "close";
+    font-size: 1.5em;
+  }
 
-    nav a {display: block; color:cadetblue;}
+  #marvin-menu-checkbox {
+    display: none; /* Hide the checkbox */
+  }
 
-    /* End of Media Query */
+  .marv-menu label {
+    cursor: pointer; /* make the label clickable */
+  }
+
+  #marvin-menu-checkbox:checked ~ nav {
+    display: block; /* Show menu when checked */
+  }
+
+  #marvin-menu-checkbox ~ nav {
+    display: none; /* Hide menu when unchecked */
+  }
+
+  /* Add any other necessary styles for your menu */
+
+  nav,
+  #marvin-menu-checkbox {
+    display: none;
+  }
+
+  label,
+  #marvin-menu-checkbox:checked ~ nav {
+    display: block;
+  }
+  #marvin-menu-checkbox:checked ~ nav {
+    background: grey;
+  }
+
+  nav a {
+    display: block;
+    color: cadetblue;
+  }
+
+  /* End of Media Query */
 }
 
 @font-face {
-    font-family: 'doodah';
-    src: url(../fonts/Kbzipadeedoodah-YG3j.ttf);
+  font-family: "doodah";
+  src: url(../fonts/Kbzipadeedoodah-YG3j.ttf);
 }
 
-h1 {color: blue;}
+h1 {
+  color: blue;
+}
 #title {
-    font-family: doodah;
-    
+  font-family: doodah;
 }

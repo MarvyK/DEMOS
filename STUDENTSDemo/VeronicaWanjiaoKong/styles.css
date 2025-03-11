@@ -1,0 +1,17 @@
+.product-specific__details a {
+  /* display: block;
+    width: 95.767px;
+    margin: auto; */
+}
+
+.cta {
+  display: block;
+  max-width: 150px;
+  background-color: #bb0000;
+  color: #fff;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
